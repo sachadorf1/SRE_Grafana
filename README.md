@@ -1,5 +1,11 @@
-# SRE_Grafana
 # Grafana
+![](img/Grafana_Cloud.png)
+
+## What is Grafana?
+- 
+## Why Grafana?
+
+
 - Create an instance with port 3000 access and ssh from your ip
 - ssh into instance
 ```
@@ -20,4 +26,13 @@ sudo systemctl status grafana-server
 sudo systemctl enable grafana-server.service
 sudo service grafana-server start
 systemctl status grafana-server.service
+sudo systemctl daemon-reload
+sudo systemctl start grafana-server
+sudo systemctl status grafana-server
+sudo systemctl enable grafana-server.service
+sudo service grafana-server start
+sudo update-rc.d grafana-server defaults
+sudo systemctl enable grafana-server.service
+sudo nano /usr/share/grafana/.credentials
+sudo chmod 0644 /usr/share/grafana/.credentials
 ```
